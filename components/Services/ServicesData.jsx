@@ -1,33 +1,45 @@
 export const servicesData = {
     mainData: {
         title: "Services",
-        title2: "What I Do",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+        title2: "Expert Solutions",
+        description: "Delivering comprehensive full-stack development solutions with a focus on modern web technologies, blockchain integration, and secure application development."
     },
     services: [
         {
             number: '01',
-            bootstrapIcon: 'bi bi-code-slash',
-            title: 'Web & Mobile Development',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+            bootstrapIcon: 'bi bi-stack',
+            title: 'Full Stack Development',
+            description: 'Expert development using the MERN stack (MongoDB, Express.js, React, Node.js). Building scalable web applications with responsive design, REST APIs, and real-time features using WebSocket technology.',
         },
         {
             number: '02',
-            bootstrapIcon: 'bi bi-laptop',
-            title: 'Digital Marketing',
-            description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+            bootstrapIcon: 'bi bi-currency-bitcoin',
+            title: 'Blockchain Solutions',
+            description: 'Development of decentralized applications (dApps) and smart contracts using Solidity. Implementation of Web3 features, NFT functionality, and integration with various blockchain networks and wallet systems.',
         },
         {
             number: '03',
-            bootstrapIcon: 'bi bi-gear',
-            title: 'Branding & Strategy',
-            description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat',
+            bootstrapIcon: 'bi bi-shield-check',
+            title: 'Secure Application Development',
+            description: 'Implementation of robust security measures and best practices in web applications. Expertise in authentication systems, data encryption, and secure API design, backed by ongoing Comptia Security+ certification.',
         },
         {
             number: '04',
-            bootstrapIcon: 'bi bi-person',
-            title: 'User Testing & Personas',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+            bootstrapIcon: 'bi bi-code-square',
+            title: 'Custom CMS & E-commerce',
+            description: 'Development and customization of content management systems and e-commerce solutions using WordPress and Shopify. Creating tailored solutions with custom plugins, themes, and third-party integrations.',
+        },
+        {
+            number: '05',
+            bootstrapIcon: 'bi bi-braces',
+            title: 'API Development & Integration',
+            description: 'Design and implementation of RESTful APIs and microservices. Integration with third-party services, payment gateways, and AI services including OpenAI, ensuring smooth data flow and system interoperability.',
+        },
+        {
+            number: '06',
+            bootstrapIcon: 'bi bi-diagram-3',
+            title: 'Technical Leadership',
+            description: 'Leading development teams with Agile methodologies, code reviews, and technical planning. Architecting solutions, establishing coding standards, and mentoring junior developers to ensure project success.',
         },
     ]
 };
