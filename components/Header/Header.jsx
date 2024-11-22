@@ -5,7 +5,8 @@ import { headerData } from './HeaderData';
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [headerHeight, setHeaderHeight] = useState(0);
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    // Set initial dark mode state to true
+    const [isDarkMode, setIsDarkMode] = useState(true);
 
     useEffect(() => {
         const updateHeaderHeight = () => {
@@ -18,18 +19,29 @@ const Header = () => {
         updateHeaderHeight();
         window.addEventListener('resize', updateHeaderHeight);
 
+        // Check local storage, but default to true if not set
         const savedDarkMode = localStorage.getItem('darkMode');
-        if (savedDarkMode) {
+        if (savedDarkMode === null) {
+            // If no preference is saved, set dark mode as default
+            localStorage.setItem('darkMode', 'true');
+            setIsDarkMode(true);
+        } else {
             setIsDarkMode(savedDarkMode === 'true');
         }
 
-        // Add class to body element when dark mode is active
+        // Apply dark mode class immediately
         if (isDarkMode) {
             document.body.classList.add('theme-dark');
-            document.querySelector('.toggle-menu').classList.remove('bg-black');
+            const toggleMenu = document.querySelector('.toggle-menu');
+            if (toggleMenu) {
+                toggleMenu.classList.remove('bg-black');
+            }
         } else {
             document.body.classList.remove('theme-dark');
-            document.querySelector('.toggle-menu').classList.add('bg-black');
+            const toggleMenu = document.querySelector('.toggle-menu');
+            if (toggleMenu) {
+                toggleMenu.classList.add('bg-black');
+            }
         }
 
         return () => {
@@ -47,8 +59,7 @@ const Header = () => {
 
     const toggleDarkMode = () => {
         setIsDarkMode(!isDarkMode);
-        // Save dark mode preference in local storage
-        localStorage.setItem('darkMode', !isDarkMode);
+        localStorage.setItem('darkMode', (!isDarkMode).toString());
     };
 
     const currentYear = new Date().getFullYear();
@@ -56,39 +67,19 @@ const Header = () => {
     return (
         <div>
             {/* Toggle Menu */}
-            <div className={`toggle-menu ${isMenuOpen ? 'show' : ''} bg-black`}>
+            <div className={`toggle-menu ${isMenuOpen ? 'show' : ''} ${isDarkMode ? '' : 'bg-black'}`}>
                 <button className="toggle-close" onClick={closeMenu}>
                     <i className="bi bi-x"></i>
                 </button>
-                {/* Close button */}
-                <h6 className="mono-heading fw-normal mb-2">Phone:</h6>
-                <h4 className="fw-medium">{headerData.mainData.phone}</h4>
                 <div className="mt-4">
                     <h6 className="mono-heading fw-normal mb-2">Email:</h6>
                     <h4 className="fw-medium">{headerData.mainData.email}</h4>
-                    <ul className="list-inline-sm mt-3">
-                        <li>
-                            <Link href={headerData.mainData.facebookURL} className="button-circle button-circle-sm button-circle-white">
-                                <i className="bi bi-facebook"></i>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href={headerData.mainData.twitterURL} className="button-circle button-circle-sm button-circle-white">
-                                <i className="bi bi-twitter"></i>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href={headerData.mainData.youtubeURL} className="button-circle button-circle-sm button-circle-white">
-                                <i className="bi bi-youtube"></i>
-                            </Link>
-                        </li>
-                    </ul>
                 </div>
                 <div className="mt-4 mt-lg-5">
                     <ul className="list-circle">
                         <li>
                             <button className="mono-heading link-decoration" onClick={toggleDarkMode}>
-                                Dark Version
+                                {isDarkMode ? 'Light Version' : 'Dark Version'}
                             </button>
                         </li>
                         {headerData.links.map((item, index) => (
@@ -125,12 +116,14 @@ const Header = () => {
                             <button className="menu-dots" aria-label="Menu" onClick={toggleMenu}>
                                 <span></span>
                             </button>
-                            {/* End Toggle Menu Button */}
                         </div>
                     </div>
                     <div className="col-12 col-lg-8 order-lg-1 col-xl-9">
                         <div className="py-4">
-                            <h1 className="display-2 fw-semi-bold m-0">{headerData.mainData.firstName} <span className="stroke-text">{headerData.mainData.secondName}</span></h1>
+                            <h1 className="display-2 fw-semi-bold m-0">
+                                {headerData.mainData.firstName} 
+                                <span className="stroke-text">{headerData.mainData.secondName}</span>
+                            </h1>
                         </div>
                     </div>
                 </div>
