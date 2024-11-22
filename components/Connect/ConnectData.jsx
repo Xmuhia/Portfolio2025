@@ -1,11 +1,26 @@
 export const connectData = {
     mainData: {
-        title: "Clients",
-        title2: "Get in touch",
-        title3: "Let's Connect",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-        phone: "+976 12 34 9999",
-        email: "flatheme@gmail.com",
-        address: "121 King St, Melbourne VIC 3000",
-    }
+        title: "Contact",
+        title2: "Get in Touch",
+        title3: "Let's Collaborate",
+        description: "I'm always open to discussing new projects, innovative ideas, or opportunities to be part of your vision. Reach out and let's create something remarkable together.",
+        email: "brendanmuhia@gmail.com",  // Replace with your actual professional email
+        linkedin: "https://linkedin.com/in/brendan-muhia",  // Replace with your actual LinkedIn URL
+        github: "https://github.com/xmuhia",  // Replace with your actual GitHub URL
+        // Optional fields depending on your preference
+        calendly: "https://calendly.com/brendan-muhia",   // General location info without specific address
+        availability: "Available for select projects and consulting"
+    },
+    preferredContact: [
+        {
+            title: "Professional Inquiries",
+            description: "For job opportunities and professional collaborations",
+            method: "Email or LinkedIn"
+        },
+        {
+            title: "Project Consultation",
+            description: "For project discussions and consultations",
+            method: "Schedule via Calendly"
+        }
+    ]
 };

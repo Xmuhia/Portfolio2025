@@ -10,7 +10,6 @@ export { default as Clients } from "./Clients/Clients";
 export { default as Resume } from "./Resume/Resume";
 export { default as Blog } from "./Blog/Blog";
 export { default as Connect } from "./Connect/Connect";
-export { default as Map } from "./Map/Map";
 export { default as BlogNavigation } from "./Navigation/BlogNavigation";
 export { default as PortfolioNavigation } from "./Navigation/PortfolioNavigation";
 export { default as Lightbox } from "./UI/Lightbox";
