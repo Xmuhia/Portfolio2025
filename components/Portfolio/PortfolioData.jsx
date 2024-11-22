@@ -1,5 +1,6 @@
-import PortfolioImg from '@/public/images/portfolio-img.jpg';
+import PortfolioImg from '@/public/images/portfolio-img.webp';
 import MainImage from '@/public/images/col-1.jpg';
+
 
 export const portfolioData = {
     mainData: {
