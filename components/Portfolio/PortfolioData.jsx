@@ -1,6 +1,6 @@
 import PortfolioImg from '@/public/images/portfolio-img.webp';
 import MainImage from '@/public/images/col-1.jpg';
-
+import PortfolioImg2 from '@/public/images/portfolio-img2.webp';
 
 export const portfolioData = {
     mainData: {
@@ -98,7 +98,7 @@ export const portfolioData = {
             services: 'Frontend Development, UI/UX Design, API Integration',
             client: 'Enterprise Solution',
             duration: '5 months',
-            imageSrc: PortfolioImg,
+            imageSrc: PortfolioImg2,
             mainImage: MainImage,
             categories: [
                 { name: 'Dashboard' },
