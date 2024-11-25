@@ -15,11 +15,6 @@ export const portfolioData = {
             dataFilter: ".web-apps"
         },
         {
-            title: "Blockchain",
-            classes: "blockchain",
-            dataFilter: ".blockchain"
-        },
-        {
             title: "AI & ML",
             classes: "ai-ml",
             dataFilter: ".ai-ml"
@@ -35,33 +30,14 @@ export const portfolioData = {
             services: 'Full Stack Development, Real-time Features, Database Design',
             client: 'Educational Institution',
             duration: '6 months',
-            imageSrc: PortfolioImg,
+            imageSrc: PortfolioImg2,
             mainImage: MainImage,
+            codeUrl: 'https://github.com/Xmuhia/E-Learning-Platform',
+            siteUrl: 'e-learning-platform-chi.vercel.app',
             categories: [
                 { name: 'Full Stack' },
                 { name: 'Education' },
                 { name: 'Real-time' }
-            ],
-            images: [
-                { image: MainImage },
-                { image: MainImage },
-            ]
-        },
-        {
-            projectTitle: 'NFT Marketplace',
-            slug: 'nft-marketplace',
-            description: 'A decentralized marketplace for NFT trading, built using Solidity smart contracts and React. Features include wallet integration, automated royalty distribution, and real-time price tracking. The platform supports multiple blockchain networks.',
-            keywords: 'Ethereum, Solidity, Web3.js, React, Smart Contracts',
-            category: 'blockchain',
-            services: 'Smart Contract Development, Frontend Development, Web3 Integration',
-            client: 'Crypto Startup',
-            duration: '4 months',
-            imageSrc: PortfolioImg,
-            mainImage: MainImage,
-            categories: [
-                { name: 'Blockchain' },
-                { name: 'Web3' },
-                { name: 'DeFi' }
             ],
             images: [
                 { image: MainImage },
@@ -79,6 +55,8 @@ export const portfolioData = {
             duration: '3 months',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
+            codeUrl: 'https://github.com/Xmuhia/Artificial-intelligence-3D-Shirtshop',
+            siteUrl: 'https://aishirtshop.vercel.app',
             categories: [
                 { name: '3D Graphics' },
                 { name: 'AI' },
@@ -88,27 +66,6 @@ export const portfolioData = {
                 { image: MainImage },
                 { image: MainImage },
             ]
-        },
-        {
-            projectTitle: 'Enterprise Admin Dashboard',
-            slug: 'admin-dashboard',
-            description: 'A comprehensive admin dashboard built with React and Material-UI, featuring advanced data visualization, real-time analytics, and role-based access control. Includes features for user management, reporting, and system monitoring.',
-            keywords: 'React, Material-UI, Redux, Chart.js, REST API',
-            category: 'web-apps',
-            services: 'Frontend Development, UI/UX Design, API Integration',
-            client: 'Enterprise Solution',
-            duration: '5 months',
-            imageSrc: PortfolioImg2,
-            mainImage: MainImage,
-            categories: [
-                { name: 'Dashboard' },
-                { name: 'Analytics' },
-                { name: 'Enterprise' }
-            ],
-            images: [
-                { image: MainImage },
-                { image: MainImage },
-            ]
-        },
+        }
     ]
 };

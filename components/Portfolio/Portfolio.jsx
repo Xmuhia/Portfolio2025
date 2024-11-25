@@ -2,19 +2,23 @@ import React, { useState } from 'react';
 import { PortfolioItem } from '../';
 import { portfolioData } from './PortfolioData';
 
-
 const Portfolio = () => {
     const [selectedFilter, setSelectedFilter] = useState('');
 
     const filteredProjects = selectedFilter === ''
-            ? portfolioData.projects
-            : portfolioData.projects.filter((item) => item.category === selectedFilter);
+        ? portfolioData.projects
+        : portfolioData.projects.filter((item) => item.category === selectedFilter);
 
     return (
         <div className="section-box mt-4" id="portfolio">
             <div className="row">
                 <div className="col-12 col-md-10 col-xl-8">
-                    <h6 className="title-heading mb-3" data-backdrop-text={portfolioData.mainData.title}>{portfolioData.mainData.title}</h6>
+                    <h6 
+                        className="title-heading mb-3" 
+                        data-backdrop-text={portfolioData.mainData.title}
+                    >
+                        {portfolioData.mainData.title}
+                    </h6>
                     <h1>{portfolioData.mainData.title2}</h1>
                     <p>{portfolioData.mainData.description}</p>
                 </div>
@@ -45,12 +49,13 @@ const Portfolio = () => {
                         imageSrc={item.imageSrc}
                         category={item.category}
                         projectTitle={item.projectTitle}
-                        slug={item.slug}
+                        codeUrl={item.codeUrl}
+                        siteUrl={item.siteUrl}
                     />
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Portfolio
+export default Portfolio;
