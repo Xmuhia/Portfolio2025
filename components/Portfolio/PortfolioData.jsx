@@ -33,7 +33,7 @@ export const portfolioData = {
             imageSrc: PortfolioImg2,
             mainImage: MainImage,
             codeUrl: 'https://github.com/Xmuhia/E-Learning-Platform',
-            siteUrl: 'e-learning-platform-chi.vercel.app',
+            siteUrl: 'https://e-learning-platform-chi.vercel.app',
             categories: [
                 { name: 'Full Stack' },
                 { name: 'Education' },
