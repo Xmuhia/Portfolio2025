@@ -82,7 +82,7 @@ export const portfolioData = {
             imageSrc: PortfolioImg3,
             mainImage: MainImage,
             codeUrl: 'https://github.com/Xmuhia/Camping-Site-Finder',
-            siteUrl: 'https://https://camping-site-finder.vercel.app',
+            siteUrl: 'https://camping-site-finder.vercel.app',
             categories: [
                 { name: 'Front-Emd' },
                 { name: 'Tourism' },
