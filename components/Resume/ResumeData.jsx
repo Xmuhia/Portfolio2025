@@ -14,7 +14,7 @@ export const resumeData = {
     ],
     experience: [
         {
-            date: 'February 2024 - Present',
+            date: 'January 2024 - December',
             degree: 'Senior Full Stack Engineer',
             university: 'ResoluteGuard Cyber Security LLC',
             description: 'Leading the development of secure web applications and implementing robust cybersecurity solutions to protect critical digital assets.',

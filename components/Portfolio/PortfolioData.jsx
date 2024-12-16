@@ -1,6 +1,9 @@
 import PortfolioImg from '@/public/images/portfolio-img.webp';
 import MainImage from '@/public/images/col-1.jpg';
 import PortfolioImg2 from '@/public/images/portfolio-img2.webp';
+import PortfolioImg3 from '@/public/images/portfolio-img3.webp';
+import PortfolioImg4 from '@/public/images/portfolio-img4.webp';
+
 
 export const portfolioData = {
     mainData: {
@@ -37,6 +40,52 @@ export const portfolioData = {
             categories: [
                 { name: 'Full Stack' },
                 { name: 'Education' },
+                { name: 'Real-time' }
+            ],
+            images: [
+                { image: MainImage },
+                { image: MainImage },
+            ]
+        },
+        {
+            projectTitle: 'Recipe Finder',
+            slug: 'e-learning-platform',
+            description: 'A Simple Recipe Finder made with Vanilla JavaScript',
+            keywords: 'VanillaJS, HTML, CSS',
+            category: 'web-apps',
+            services: 'API, Real-time Features, Database Design',
+            client: 'Educational Institution',
+            duration: '6 months',
+            imageSrc: PortfolioImg4,
+            mainImage: MainImage,
+            codeUrl: 'https://github.com/Xmuhia/Recipe-App',
+            siteUrl: 'https://recipeappx.netlify.app',
+            categories: [
+                { name: 'Full Stack' },
+                { name: 'Education' },
+                { name: 'Real-time' }
+            ],
+            images: [
+                { image: MainImage },
+                { image: MainImage },
+            ]
+        },
+        {
+            projectTitle: 'Camping Site Finder',
+            slug: 'e-learning-platform',
+            description: 'A Site to help you Camp in Style',
+            keywords: 'Nextjs, React, Typescript',
+            category: 'web-apps',
+            services: 'Full Stack Development, Real-time Features, Database Design',
+            client: 'Travel Company',
+            duration: '6 months',
+            imageSrc: PortfolioImg3,
+            mainImage: MainImage,
+            codeUrl: 'https://github.com/Xmuhia/Camping-Site-Finder',
+            siteUrl: 'https://https://camping-site-finder.vercel.app',
+            categories: [
+                { name: 'Front-Emd' },
+                { name: 'Tourism' },
                 { name: 'Real-time' }
             ],
             images: [
