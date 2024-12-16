@@ -4,23 +4,13 @@ import Typewriter from 'typewriter-effect';
 import { aboutData } from './AboutData';
 
 const About = () => {
-    const initialCounters = aboutData.skills.reduce((obj, skill) => {
-        obj[skill.id] = 0;
-        return obj;
-    }, {});
-
     const [counters, setCounters] = useState({
-        ...initialCounters,
         yearsOfExperience: 0,
         hoursOfWorking: 0,
         projectsDone: 0,
     });
 
     const targetCounters = {
-        ...aboutData.skills.reduce((obj, skill) => {
-            obj[skill.id] = skill.percent;
-            return obj;
-        }, {}),
         yearsOfExperience: aboutData.mainData.yearsOfExperience,
         hoursOfWorking: aboutData.mainData.hoursOfWorking,
         projectsDone: aboutData.mainData.projectsDone,
@@ -54,7 +44,6 @@ const About = () => {
 
     return (
         <div className="section-box" id="about">
-
             <div className="row g-4 g-xl-5">
                 <div className="col-12 col-xl-4">
                     {/* Hero Avatar */}
@@ -82,7 +71,6 @@ const About = () => {
                         {aboutData.skills.map((skill, index) => (
                             <li key={index}>
                                 <i className={`${skill.fontawesomeIcon} pe-2`}></i> {skill.name}
-                                <div className="d-inline-block font-family-mono font-small">(<span className="counter">{counters[skill.id]}</span>%)</div>
                             </li>
                         ))}
                     </ul>

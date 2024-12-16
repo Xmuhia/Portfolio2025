@@ -16,37 +16,31 @@ export const aboutData = {
         {
             id: 1,
             name: 'MERN Stack',
-            percent: '95',
             fontawesomeIcon: 'fa-brands fa-node-js',
         },
         {
             id: 2,
             name: 'React & Next.js',
-            percent: '92',
             fontawesomeIcon: 'fa-brands fa-react',
         },
         {
             id: 3,
             name: 'Frontend Libraries',
-            percent: '90',
             fontawesomeIcon: 'fa-brands fa-bootstrap',
         },
         {
             id: 4,
             name: 'Web3 & Solidity',
-            percent: '85',
             fontawesomeIcon: 'fa-brands fa-ethereum',
         },
         {
             id: 5,
             name: 'CMS & E-commerce',
-            percent: '88',
             fontawesomeIcon: 'fa-brands fa-shopify',
         },
         {
             id: 6,
             name: 'Cybersecurity',
-            percent: '75',
             fontawesomeIcon: 'fa-solid fa-shield-halved',
         },
     ]
