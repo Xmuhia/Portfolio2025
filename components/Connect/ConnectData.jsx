@@ -4,11 +4,10 @@ export const connectData = {
         title2: "Get in Touch",
         title3: "Let's Collaborate",
         description: "I'm always open to discussing new projects, innovative ideas, or opportunities to be part of your vision. Reach out and let's create something remarkable together.",
-        email: "brendanmuhia@gmail.com",  // Replace with your actual professional email
-        linkedin: "https://linkedin.com/in/brendan-muhia",  // Replace with your actual LinkedIn URL
-        github: "https://github.com/xmuhia",  // Replace with your actual GitHub URL
-        // Optional fields depending on your preference
-        calendly: "https://calendly.com/brendan-muhia",   // General location info without specific address
+        email: "dotcombrendan@gmail.com",  
+        linkedin: "https://linkedin.com/in/brendan-muhia", 
+        github: "https://github.com/xmuhia", 
+        calendly: "https://calendly.com/brendan-muhia",
         availability: "Available for select projects and consulting"
     },
     preferredContact: [
