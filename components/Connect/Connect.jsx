@@ -57,11 +57,6 @@ ${formData.email}
                         <div className="mb-5">
                             <h4 className="mb-4">Professional Networks</h4>
                             <div className="d-flex flex-column gap-3">
-                                <a href={connectData.mainData.linkedin} target="_blank" rel="noopener noreferrer" 
-                                   className="contact-link">
-                                    <i className="bi bi-linkedin fs-5 me-2"></i>
-                                    LinkedIn Profile
-                                </a>
                                 <a href={connectData.mainData.github} target="_blank" rel="noopener noreferrer" 
                                    className="contact-link">
                                     <i className="bi bi-github fs-5 me-2"></i>
@@ -71,13 +66,6 @@ ${formData.email}
                                     <i className="bi bi-envelope fs-5 me-2"></i>
                                     {connectData.mainData.email}
                                 </a>
-                                {connectData.mainData.calendly && (
-                                    <a href={connectData.mainData.calendly} target="_blank" rel="noopener noreferrer" 
-                                       className="contact-link">
-                                        <i className="bi bi-calendar-event fs-5 me-2"></i>
-                                        Schedule a Meeting
-                                    </a>
-                                )}
                             </div>
                         </div>
 
