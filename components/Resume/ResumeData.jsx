@@ -14,6 +14,19 @@ export const resumeData = {
     ],
     experience: [
         {
+            date: 'January 2025 - Present',
+            degree: 'Founder & Lead Developer',
+            university: 'Andromeda Labs Limited',
+            description: 'Founded and operate a software development and consultancy agency specializing in innovative technology solutions for businesses across various industries.',
+            highlights: [
+                'Strategic business development and client relationship management',
+                'End-to-end development of custom software solutions and web applications',
+                'Implementation of cybersecurity frameworks and secure development practices',
+                'Technical consultation on digital transformation initiatives',
+                'Team leadership and project management across multiple client engagements'
+            ]
+        },
+        {
             date: 'January 2024 - December',
             degree: 'Senior Full Stack Engineer',
             university: 'ResoluteGuard Cyber Security LLC',
